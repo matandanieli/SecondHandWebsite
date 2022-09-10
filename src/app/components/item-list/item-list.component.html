@@ -1,0 +1,12 @@
+<H1>Danieli's Website Shop</H1>
+<p>second hand online shop !<br>
+    you can purchase items or add an item you would like to sell <br>
+    in our website, checkout the "add" link in the nav bar :)
+</p><br>
+
+<button (click)="sortByPrice()" class="btn btn-info">Sort By Price</button>
+<button (click)="sortByDate()" class="btn btn-info">Sort By Date</button>
+
+<div *ngFor="let item of items">
+    <item [item]="item" (ondelete)="onItemDeleteHandler($event)"></item>
+</div>

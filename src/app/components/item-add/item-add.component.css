@@ -1,0 +1,22 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.error{
+    color: red;
+}
+
+input.ng-valid[required]{
+    background-color: lightgreen;
+}
+input.ng-valid{
+    background-color: lightgreen;
+}
+input.ng-invalid{
+    background-color: lightcoral;
+}
+input.ng-dirty.ng-invalid{
+    background-color: lightcoral;
+}
+
+form{
+    width: 500px;
+}

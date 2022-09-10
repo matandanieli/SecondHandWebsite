@@ -1,0 +1,8 @@
+<br>
+
+<img [src]="item.imageSource" (click)="goToDetails(item.id)">
+<h2 highlightDirective>{{item.name}}</h2>
+<p>{{item.publishDate | date:'dd/MM/yyyy, h:mm a'}}</p>
+<h3>{{item.price | shekelCurrency}}</h3>
+<button (click)="goToDetails(item.id)" class="btn btn-secondary">Details</button>
+<button (click)="Purchase()" class="btn btn-primary">Purchase</button>

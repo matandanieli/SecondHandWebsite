@@ -1,0 +1,14 @@
+
+<div class="card" style="width: 40rem;">
+    <img class="card-img-top" [src]="item.imageSource" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text">
+        {{item.description}}
+        <h3>City: {{item.city}}</h3>
+        <h3>Owner Phone: {{item.phoneNumber}}</h3>
+        <h3>Publish Date: {{item.publishDate | date:'dd/MM/yyyy, h:mm a'}}</h3>
+        <h2>Price: {{item.price | shekelCurrency}}</h2>
+      <button (click)="Purchase()">Buy me</button>
+    </div>
+  </div>
